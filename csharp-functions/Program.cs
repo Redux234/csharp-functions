@@ -24,8 +24,8 @@ void SampaArrayNumeriInteri(int[] ArrayNumeriInteri)
 
 //Funzione che eleva al quadrato gli elemnti di un array
 
-int[] ArrayNumeriBase = { 2, 5, 7, 9, 12 };
-Quadrato(ArrayNumeriBase);
+int[] ArrayNumeri = { 2, 5, 7, 9, 12 };
+Quadrato(ArrayNumeri);
 
 
 void Quadrato(int[] ArrayNumeriBase)
@@ -66,8 +66,71 @@ void Quadrato(int[] ArrayNumeriBase)
     
 }
 
-//
+//Funzione che crea un nuovo array con gli elementi che sono il quadrato degli elementi del primo array
+
+int[] ArrayNumeriDaMoltiplicare= { 2, 5, 7, 9, 12 };
+ArrayQuadrato(ArrayNumeriDaMoltiplicare);
+void ArrayQuadrato(int[] ArrayNumeriDaMoltiplicare)
+
+//Stampo l'array base
+{
+
+    Console.Write("[ ");
+    for (int i = 0; i < ArrayNumeriDaMoltiplicare.Length; i++)
+    {
+        if (i == ArrayNumeriDaMoltiplicare.Length - 1)
+        {
+            Console.Write(ArrayNumeriDaMoltiplicare[i]);
+        }
+        else
+        {
+            Console.Write(ArrayNumeriDaMoltiplicare[i] + ", ");
+        }
+    }
+    Console.WriteLine(" ]");
+
+    //Stampo la modifica
+
+    for (int i = 0; i < ArrayNumeriDaMoltiplicare.Length; i++)
+    {
+        int nuemroquadrato = ArrayNumeriDaMoltiplicare[i] * ArrayNumeriDaMoltiplicare[i];
+  
+        
+    }
+   
+
+}
 
 
+//Funzione somma
+
+int[] ArrayNumeriDaSommare = { 2, 5, 7, 9, 12 };
+SommaNumeri(ArrayNumeriDaSommare);
 
 
+void SommaNumeri(int[] ArrayNumeriDaSommare)
+
+//Stampo l'array base
+{
+
+    Console.Write("[ ");
+    for (int i = 0; i < ArrayNumeriDaSommare.Length; i++)
+    {
+        if (i == ArrayNumeriDaSommare.Length - 1)
+        {
+            Console.Write(ArrayNumeriDaSommare[i]);
+        }
+        else
+        {
+            Console.Write(ArrayNumeriDaSommare[i] + ", ");
+        }
+    }
+    Console.WriteLine(" ]");
+
+    //Stampo la modifica
+
+    int somma = ArrayNumeriDaSommare.Sum();
+    Console.WriteLine(somma);
+    
+    
+}
